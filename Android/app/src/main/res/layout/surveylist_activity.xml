@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <ListView
+        android:background="@android:color/transparent"
+        android:id="@+id/surveylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+
+    <View
+        android:id="@+id/groundback"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5e000000"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/surveymenu"
+        android:tint="#494949"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="17dp"
+        app:backgroundTint="#fdfdfd"
+        app:elevation="3dp"
+        app:fabSize="normal" />
+
+
+    <LinearLayout
+        android:id="@+id/surveyaddlayout"
+        android:visibility="invisible"
+        android:layout_marginRight="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/add_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="19dp"
+            android:layout_toStartOf="@+id/linearLayout"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:elevation="1dp"
+            android:textColor="#414141"
+            android:fontFamily="cursive"
+            android:text="설문지 만들기"
+
+            android:textSize="15dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/surveyadd"
+            android:src="@drawable/surveyadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="39dp"
+            android:layout_marginEnd="17dp"
+            android:tint="#3d3d3d"
+            app:backgroundTint="#ffffff"
+            app:elevation="3dp"
+            app:fabSize="mini"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/surveysettinglayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/surveyaddlayout"
+        android:layout_marginEnd="65dp">
+
+        <TextView
+            android:id="@+id/setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="19dp"
+            android:layout_toStartOf="@+id/linearLayout"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:text="내 정보"
+            android:background="#ffffff"
+            android:elevation="1dp"
+            android:textColor="#414141"
+            android:textSize="15dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/surveysetting"
+            android:src="@drawable/surveysetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="39dp"
+            android:layout_marginEnd="17dp"
+            android:tint="#3d3d3d"
+            app:backgroundTint="#ffffff"
+            app:elevation="3dp"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+
+</RelativeLayout>

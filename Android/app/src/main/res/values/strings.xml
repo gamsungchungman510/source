@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tok!Tok!Survey</string>
+
+    <string-array name="category">
+        <item>가전제품</item>
+        <item>이동통신</item>
+        <item>자동차</item>
+        <item>건설</item>
+        <item>금융</item>
+        <item>보험</item>
+        <item>음식</item>
+        <item>음료</item>
+        <item>엔터테이먼트</item>
+        <item>교육</item>
+        <item>육아</item>
+        <item>의료</item>
+        <item>IT</item>
+        <item>스포츠</item>
+        <item>미용</item>
+        <item>패션</item>
+        <item>서비스</item>
+        <item>미용</item>
+        <item>패션</item>
+        <item>서비스</item>
+        <item>문화</item>
+        <item>여론조사</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>

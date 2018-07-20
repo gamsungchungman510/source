@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:layout_marginVertical="10dp"
+        android:text="내 정보"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="500dp"
+
+
+        android:background="@drawable/itembackground"
+        android:layout_height="105dp">
+
+        <TextView
+            android:id="@+id/pointtv"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5pt"
+            android:gravity="center"
+            android:text="[100/90]"
+            android:textSize="7pt" />
+
+        <TextView
+
+            android:text="선린 인터넷고 만족도 조사 "
+            android:layout_marginTop="5pt"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/pointtv"
+            android:gravity="center_vertical"
+            android:textSize="10pt"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/pointtv"
+            android:id="@+id/titletv" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pointtv"
+            android:gravity="center"
+            android:text="7 / 17 - 7 / 28"
+            android:textSize="6.5pt"
+            android:id="@+id/datetv" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/idtv"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/datetv"
+            android:layout_below="@+id/titletv"
+            android:layout_toEndOf="@+id/datetv"
+            android:gravity="center"
+            android:text="감성충만"
+            android:textSize="6.5pt" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

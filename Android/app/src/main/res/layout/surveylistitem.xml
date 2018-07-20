@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="500dp"
+
+
+        android:background="@drawable/itembackground"
+        android:layout_height="105dp">
+
+        <TextView
+            android:id="@+id/pointtv"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5pt"
+            android:gravity="center"
+            android:text="[100/90]"
+            android:textSize="7pt" />
+
+        <TextView
+
+            android:text="realrudaga 실화?"
+            android:layout_marginTop="5pt"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/pointtv"
+            android:gravity="center_vertical"
+            android:textSize="10pt"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/pointtv"
+            android:id="@+id/titletv" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pointtv"
+            android:gravity="center"
+            android:text="7 / 17 - 7 / 19"
+            android:textSize="6.5pt"
+            android:id="@+id/datetv" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/idtv"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/datetv"
+            android:layout_below="@+id/titletv"
+            android:layout_toEndOf="@+id/datetv"
+            android:gravity="center"
+            android:text="yyadding"
+            android:textSize="6.5pt" />
+
+    </RelativeLayout>
+</RelativeLayout>

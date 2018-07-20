@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/bigtitle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="30sp"
+            android:hint="제목"/>
+
+        <EditText
+            android:id="@+id/pt"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:hint="차감될(나눠줄) 포인트"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/mkminus"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="14dp"
+                android:layout_toStartOf="@+id/mkplus"
+                android:background="@drawable/btn_design"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/mkplus"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="102dp"
+                android:background="@drawable/btn_design"
+                android:text="+"
+                android:textSize="5pt" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/makerc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mkminus"
+                android:overScrollMode="always">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/mksubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/mkminus"
+                android:background="@drawable/loginform"
+                android:text="submit" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

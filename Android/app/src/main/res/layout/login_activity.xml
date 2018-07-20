@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgradient"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/ske"
+            android:layout_width="250dp"
+            android:layout_height="250dp"/>
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="250dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:elevation="5dp"
+            android:background="@drawable/loginform"
+            android:id="@+id/loginid"
+            android:paddingHorizontal="15dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:privateImeOptions="defaultInputmode=english"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:elevation="5dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/loginform"
+            android:id="@+id/loginpw"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="PASSWORD"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+
+            android:id="@+id/loginbtn"
+            android:elevation="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_design"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_forward_24dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/registerbtn"
+            android:gravity="center"
+            android:textColor="#0011ff"
+            android:layout_width="216dp"
+            android:layout_height="44dp"
+            android:textSize="12dp"
+            android:text="계정이 없으시다면 회원가입"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

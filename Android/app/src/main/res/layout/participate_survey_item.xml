@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/partcard"
+        android:elevation="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/partproblem"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="1.당신의 얼굴의 문제는?"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            />
+
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/partvalue1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/partproblem"
+                android:layout_below="@+id/partproblem"
+                android:text="value1" />
+
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/partvalue2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/partproblem"
+                android:layout_below="@+id/partvalue1"
+                android:text="value2" />
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/partvalue3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/partproblem"
+                android:layout_below="@+id/partvalue2"
+                android:text="value3" />
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/partvalue4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/partproblem"
+                android:layout_below="@+id/partvalue3"
+                android:layout_marginBottom="10dp"
+                android:text="value4" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
