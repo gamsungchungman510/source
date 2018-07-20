@@ -44,6 +44,7 @@ public class MakeListAdapter extends RecyclerView.Adapter<MakeListAdapter.ViewHo
         value4ed = new ArrayList<>();
         titleed = new ArrayList<>();
 
+
         for(int i=0; i<20; i++)
         {
             value1ed.add(null);
@@ -79,7 +80,7 @@ public class MakeListAdapter extends RecyclerView.Adapter<MakeListAdapter.ViewHo
         List<MakeInfo> about = new ArrayList<>();
         for(int i=0; i<MakeInfoList.size(); i++)
         {
-            if(titleed.get(i) != null && value1ed.get(i).getText().toString()!=null &&  value2ed.get(i).getText().toString()!=null && value3ed.get(i).getText().toString()!=null &&  value4ed.get(i).getText().toString()!=null ) {
+            if(titleed.get(i) != null && value1ed.get(i)!=null &&  value2ed.get(i)!=null && value3ed.get(i)!=null &&  value4ed.get(i)!=null ) {
                 Toast.makeText(context, String.valueOf(titleed.get(i)), Toast.LENGTH_SHORT).show();
                 about.add(new MakeInfo(titleed.get(i).getText().toString() , new String[]{value1ed.get(i).getText().toString(),value2ed.get(i).getText().toString(),value3ed.get(i).getText().toString(),value4ed.get(i).getText().toString()}));
             }

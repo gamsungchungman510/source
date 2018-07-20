@@ -55,7 +55,7 @@ public class GetSurveyLists  {
             String e = stringBuilder.toString();
             JSONArray list = new JSONObject(e).getJSONArray("list");
 
-            for(int i=0; i < list.length(); i++) {
+            for(int i   =0; i < list.length(); i++) {
                 JSONObject one = list.getJSONObject(i);
 
                 surveyInfos.add(new SurveyInfo(one.getJSONArray("deadline").getInt(0),one.getJSONArray("deadline").getInt(1),one.getJSONArray("deadline").getInt(2),one.getString("name") , one.getString("price"),one.getString("id")));

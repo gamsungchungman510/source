@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -62,6 +63,12 @@ public class Participate_survey extends AppCompatActivity {
         List<ProblemInfo> problemInfoList  = GetProblem(ProblemName);
         participate_recyclerAdapter = new Participate_recyclerAdapter(problemInfoList);
         ProblemsRecycler.setAdapter(participate_recyclerAdapter);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 
